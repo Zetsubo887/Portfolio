@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Abdul BALOGOUN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="competences.html">Compétences</a>
+            <a href="projets.html" class="active">Projets</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h2 class="section-title">Mes Réalisations</h2>
+
+        <div class="projects-list">
+            
+            <details class="project-item">
+                <summary>
+                    <div class="project-header-info">
+                        <h3>Prédiction de Salaires - Offres d'Emploi APEC</h3>
+                        <div class="project-tags">
+                            <span class="tag-python">Python</span>
+                            <span class="tag-ml">Machine Learning</span>
+                            <span class="tag-scraping">Web Scraping</span>
+                            <span class="tag-bi">Dash / Web App</span>
+                        </div>
+                    </div>
+                </summary>
+                
+                <div class="project-details-content">
+                    <p class="project-description">
+                        <strong>Description :</strong> Implémentation d'une chaîne de traitement complète (End-to-End) visant à estimer la fourchette salariale d'une offre d'emploi à partir de ses caractéristiques textuelles et structurelles.
+                    </p>
+                    
+                    <div class="project-grid-info">
+                        <div class="info-box">
+                            <h4>Objectif & Problématique</h4>
+                            <p>Réduire l'opacité salariale du marché en fournissant une estimation fiable pour les offres "selon profil". Cet outil aide les jeunes diplômés à connaître leur valeur réelle et à préparer leurs négociations.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <h4>🛠 Méthodologie</h4>
+                            <ul>
+                                <li><strong>Acquisition :</strong> Scraping via API APEC (tokens & requêtes JSON).</li>
+                                <li><strong>Preprocessing :</strong> Nettoyage, standardisation et passage au logarithme du salaire.</li>
+                                <li><strong>Modélisation :</strong> Benchmark de modèles (Random Forest, XGBoost, LM) via <em>Rich</em>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box conclusion-highlight">
+                        <h4>Conclusion & Performance</h4>
+                        <p>Le <strong>Modèle Linéaire</strong> a été retenu avec un <strong>R² de 0.53</strong>. Ce choix privilégie une performance généralisable et interprétable, évitant l'overfitting des modèles plus complexes. Déploiement via <strong>Dash</strong>.</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/ton-pseudo/apec-salary-prediction" class="link-btn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="#" class="link-btn pdf" target="_blank">
+                            <i class="fas fa-file-pdf"></i> Fiche Technique
+                        </a>
+                    </div>
+                </div>
+            </details>
+
+            <details class="project-item">
+                <summary>
+                    <div class="project-header-info">
+                        <h3>Analyse des Biais Culturels des IA (Compar:IA)</h3>
+                        <div class="project-tags">
+                            <span class="tag-python">Python</span>
+                            <span class="tag-bi">Streamlit</span>
+                            <span class="tag-stats">Analyse de Biais</span>
+                            <span class="tag-ml">NLP / TF-IDF</span>
+                        </div>
+                    </div>
+                </summary>
+                
+                <div class="project-details-content">
+                    <p class="project-description">
+                        <strong>Description :</strong> Dashboard interactif analysant les usages et les biais de représentation des modèles de LLM, basé sur les données de la plateforme <em>Compar:IA</em> (beta.gouv.fr).
+                    </p>
+                    
+                    <div class="project-grid-info">
+                        <div class="info-box">
+                            <h4> Objectif & Problématique</h4>
+                            <p>Évaluer si les IA reproduisent des biais de représentation culturelle sur le patrimoine français ou si certains modèles sont plus équilibrés sur les données nationales.</p>
+                        </div>
+                        
+                        <div class="info-box">
+                            <h4>🛠 Méthodologie</h4>
+                            <ul>
+                                <li><strong>Open Data :</strong> Croisement avec les bases <strong>Joconde</strong> (988k œuvres) et <strong>Basilic</strong> (86k équipements).</li>
+                                <li><strong>Analyse :</strong> Calcul de scores de biais via <strong>TF-IDF</strong> et analyse de fréquences.</li>
+                                <li><strong>Architecture :</strong> Structure modulaire avec tests unitaires (Pytest).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="info-box conclusion-highlight">
+                        <h4>Conclusion & Apports</h4>
+                        <p>Le cockpit permet de comparer les winrates par modèle jusqu'en février 2026. L'analyse révèle des disparités significatives dans la représentation des domaines artistiques français.</p>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/ton-pseudo/dashboard-ia-culture" class="link-btn" target="_blank">
+                            <i class="fab fa-github"></i> Explorer le code
+                        </a>
+                        <a href="#" class="link-btn pdf" target="_blank">
+                            <i class="fas fa-chart-pie"></i> Rapport PDF
+                        </a>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Abdul BALOGOUN</p>
+    </footer>
+
+</body>
+</html>
