@@ -330,40 +330,54 @@ details ul, details p { padding: 0 15px 15px 25px; margin: 0; font-size: 0.9rem;
     .project-header-info h3 { font-size: 1.2rem; }
 }
 
+/* --- Navigation --- */
 .nav-container {
     display: flex;
-    justify-content: space-between; /* Espace entre les liens et les logos */
+    justify-content: space-between; 
     align-items: center;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 15px 20px;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 25px; 
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    color: #3498db; 
+    border-bottom: 2px solid #3498db;
+}
+
+/* --- Icônes Social --- */
 .nav-social {
     display: flex;
-    gap: 20px;
-    font-size: 1.4rem; /* Taille des logos */
+    gap: 20px; 
 }
 
 .nav-social a {
-    color: var(--primary); /* Ou la couleur de ton texte de nav */
-    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 1.5rem; 
+    color: #333;
+    transition: transform 0.3s, color 0.3s;
 }
 
 .nav-social a:hover {
-    color: var(--accent); /* Couleur au survol */
+    color: #0077b5; 
     transform: scale(1.1);
 }
 
 /* --- Centrage du bouton CV --- */
 .cta-buttons {
     display: flex;
-    justify-content: center; /* Centre le bouton unique */
+    justify-content: center; 
     margin-top: 30px;
 }
 footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
